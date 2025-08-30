@@ -13,7 +13,9 @@ app.get('/proxy', async (req, res) => {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)',
         'Referer': 'https://www.google.com',
         'Accept': '*/*',
-        'Origin': 'https://www.google.com'
+        'Origin': 'https://www.google.com',
+        'Accept-Encoding': 'gzip, deflate, br',
+        'Connection': 'keep-alive'
       }
     });
 
